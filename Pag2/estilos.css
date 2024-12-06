@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+/* menu */
+ #menu a, button{
+     font-size: 18px !important;
+     font-weight: 600;
+ }
+
+ #menu a{
+     color:#3f3f3f;    
+ }
+
+/*equipo img*/
+#img-equipo{
+    max-height:30rem !important;
+    width:50%;
+}
+
+
+/*Google maps y ubicacion*/
+#ubicacion {
+    margin-top:50px;
+    background-color: #f3f3f3;
+    display:flex;
+    justify-content: center; 
+    padding-bottom: 300px; 
+}
+
+.ubicacion-1 {
+    width:50%;
+    margin-left:100px;
+    padding-top:150px;
+}
+
+/*San miguel*/
+#numeros-ubicacion{
+    margin:0 !important;
+    padding:0 !important;
+}
+#numeros-ubicacion div {
+    padding: 0 20px 0 0;   
+    text-align:left;
+    height:48px;
+}
+
+#numeros-ubicacion div:not(:last-child) {
+    border-right: 2px solid #3f3f3f;
+  }
+#numeros-ubicacion div:not(:first-child) {
+    padding-left:20px;
+  }
+
+#numeros-ubicacion p{
+    margin:0;
+}
+
+/*contacto fondo bacraun*/
+#bg-contactos{
+    position:relative;
+    top: -130px;
+} 
+
+ #seccion-contacto{
+    background-color: #1b2a4e;
+    min-height:500px;
+    position:relative;
+}
+
+/*formulario*/
+#contenedor-formulario{
+    position:absolute;
+    top:30%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    background: #fbfafa;
+    border-radius:5px;
+}
+
+#titulo-formulario {
+    color: #3f3f3f;
+}
+
+/*footer*/
+footer {
+    background: #1b2a4e;
+    min-height: 100px;
+}
+footer p{
+    color:#f3f3f3;
+    text-align: center;
+}
+#iconos{
+    font-size: 26px;
+}
+
+/*media queries desktop*/
+@media (max-width:1200px){
+    #intro, #equipo {
+        width:90%;
+        margin:auto;
+    }
+  
+    #local {
+        flex-wrap: wrap;
+        padding-top:30px;
+   }
+   .wrapper-local {
+    width:90%;
+    margin:auto;
+    padding-top:50px;    
+   }
+ 
+}
+
+/*media queries sm*/
+@media (max-width:768px) {
+
+    #intro, #equipo{
+        width:90%;
+        margin:auto;
+    }
+
+    #img-equipo{
+        max-height:20rem;
+        width:90%;
+    }
+    .wrapper-local {
+        width:90%;
+        margin:auto;
+        padding-top:50px;    
+    }
+    #local {
+        flex-wrap: wrap;
+    }
+    .mapa img {
+        width:100%;
+        height:auto;
+    }
+    #bg-contactos{
+        top: -120px;
+    }
+
+
+}
+
+/*media queries extra sm*/
+@media (max-width: 576px) {
+    #renders-fila-1 {
+        width:100%;
+    }
+    #renders-fila-2 {
+        width:100%;
+    }
+
+    .icono-wrap{
+        flex-wrap:wrap;
+        justify-content: center !important;
+        text-align: center;
+    }
+}
